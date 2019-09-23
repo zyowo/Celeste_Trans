@@ -1,4 +1,4 @@
-var rollTranslate = {
+﻿var rollTranslate = {
 
     // 分检查点草莓
     "All Berries in Start of 1A (6)":                   "1A-1/开始 6草莓",
@@ -54,7 +54,7 @@ var rollTranslate = {
     "15 Berries in 3 Chapters":                         "三个章节 各15草莓",
     "5 Berries in 4 Chapters":                          "四个章节 各5草莓",
     "10 Berries in 4 Chapters":                         "四个章节 各10草莓",
-    "15 Berries in 4 Chapters":                         "第9章 撞1电箱",	   // 已经修改
+    "15 Berries in 4 Chapters":                         "第9章 撞1电箱",	// 已经修改
     "5 Berries in 5 Chapters":                          "五个章节 各5草莓",
     "10 Berries in 5 Chapters":                         "五个章节 各10草莓",
 
@@ -120,10 +120,10 @@ var rollTranslate = {
     "Reflection Cassette":                              "6A 磁带",
     "The Summit Cassette":                              "7A 磁带",
     //----------------------------------------------------------------
-    "2 Cassettes":                                      "2磁带",
-    "3 Cassettes":                                      "3磁带",
-    "4 Cassettes":                                      "4磁带",
-    "5 Cassettes":                                      "5磁带",
+    "2 Cassettes":                                      "2个磁带",      // 以下均略修 by云
+    "3 Cassettes":                                      "3个磁带",
+    "4 Cassettes":                                      "4个磁带",
+    "5 Cassettes":                                      "5个磁带",
     
     // 水晶之心
     "2 Hearts":                                         "2水晶之心",
@@ -146,13 +146,13 @@ var rollTranslate = {
     "All Collectibles in 8A":                           "8A 全收集",
 
     // B面
-    "Forsaken City B-Side":                             "1B",
-    "Old Site B-Side":                                  "2B",
-    "Celestial Resort B-Side":                          "3B",
-    "Golden Ridge B-Side":                              "4B",
-    "Mirror Temple B-Side":                             "5B",
-    "Reflection B-Side":                                "6B",
-    "The Summit B-Side":                                "7B",
+    "Forsaken City B-Side":                             "通关1B",      // 以下均略修 by云
+    "Old Site B-Side":                                  "通关2B",
+    "Celestial Resort B-Side":                          "通关3B",
+    "Golden Ridge B-Side":                              "通关4B",
+    "Mirror Temple B-Side":                             "通关5B",
+    "Reflection B-Side":                                "通关6B",
+    "The Summit B-Side":                                "通关7B",
 
     // 累计AB面
     "Complete 1 B-Side":                                "1个B面",
@@ -239,8 +239,8 @@ var rollTranslate = {
     "Kill a Seeker":                                    "杀1新浪",
     "Kill 2 different Seekers":                         "杀2不同新浪",
     "Stun Seekers 10 times":                            "踩10新浪",
-    "Stun Seekers 20 times":                            "踩20新浪",
-    "Stun Seekers 30 times":                            "踩30新浪",
+    "Stun Seekers 20 times":                            "踩至少3新浪共20次",    // 已修改 by云
+    "Stun Seekers 30 times":                            "踩至少5新浪共30次",    // 已修改 by云
 
     // Theo
     "Talk to Theo in Crossing":                         "1A-2/十字路口 与Theo对话",
@@ -248,7 +248,7 @@ var rollTranslate = {
     "Talk to Theo in Elevator Shaft":                   "3A-3/电梯井 与Theo对话",
     "Talk to Theo in Search":                           "5A-4/搜寻 与Theo对话",
     //----------------------------------------------------------------
-    "2 optional Theo Cutscenes":                        "2支线Theo对话",
+    "2 optional Theo Cutscenes":                        "2个可不触发的Theo对话",
     "3 optional Theo Cutscenes":                        "3支线Theo对话",
     "All 4 optional Theo Cutscenes":                    "4支线Theo对话",
 
@@ -272,7 +272,7 @@ var rollTranslate = {
     // 杂项
     "Read the Poem in Awake":                           "2A-3/唤醒 读诗词",
     "Take hidden path before Cliff Face":               "在 4A-4/悬崖峭壁 前走隐藏路线",
-    "Don't skip final 4A Cutscene":                     "4A 读完结束剧情",
+    "Don't skip final 4A Cutscene":                     "4A 不跳过结尾剧情",    // 略修改 by云
     "No shortcut in 5A double bubble room":             "5A 用钥匙开第二扇门",
     "Get 1 Key in Search":                              "5A-4/搜寻 1钥匙",
     "Get 2 Keys in Search":                             "5A-4/搜寻 2钥匙",
