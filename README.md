@@ -1,6 +1,6 @@
 # 蔚蓝Bingo自动翻译
 
-- 代码：ElderFish
+- 代码：ElderFish（原作者）DemoJameson（聊天框自动翻译）
 
 - 翻译：奶猫 Hyun
 
