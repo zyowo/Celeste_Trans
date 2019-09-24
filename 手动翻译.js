@@ -1,23 +1,5 @@
-﻿// ==UserScript==
-// @name              蔚蓝BINGO翻译
-// @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.2
-// @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
-// @description       2019-09-24 一键翻译脚本
-// @author            zyowo, elderFish, Hyun.
-// @supportURL        https://github.com/kuailemario/Celeste_Trans/issues
-// @match             *://www.bingosync.com/room/*
-// @match             *://bingosync.com/room/*
-// @run-at            document-end
-// @grant             unsafeWindow
-// @grant             GM_setClipboard
-// ==/UserScript==
+﻿var rollTranslate = {
 
-$(document).ready(function () {
-  var targetDom = $('#bingo-chat').closest('.panel').children('.panel-heading');
-  var trsBtn = '<span id="transBtn" class="btn btn-default btn-xs pull-right collapse-button" data-lang="cn">显示中文</span>';
-
-  var rollTranslate = {
     // 分检查点草莓
     "All Berries in Start of 1A (6)":                   "1A-1/开始 6草莓",
     "All Berries in Crossing (9)":                      "1A-2/十字路口 9草莓",
@@ -117,9 +99,9 @@ $(document).ready(function () {
     "Reflection Blue Heart":                            "6A 蓝心",
     "The Summit Blue Heart":                            "7A 蓝心",
     //----------------------------------------------------------------
-    "1 Blue and 1 Red Heart":                           "1枚蓝心+1枚红心",    // 防止与 1A 2A 混淆
-    "2 Blue and 2 Red Hearts":                          "2枚蓝心+2枚红心",
-    "3 Blue and 3 Red Hearts":                          "3枚蓝心+3枚红心",
+    "1 Blue and 1 Red Heart":                           "1蓝心+1红心",
+    "2 Blue and 2 Red Hearts":                          "2蓝心+2红心",
+    "3 Blue and 3 Red Hearts":                          "3蓝心+3红心",
     //----------------------------------------------------------------
     "Blue and Red Heart in Forsaken City":              "第1章 蓝心+红心",
     "Blue and Red Heart in Old Site":                   "第2章 蓝心+红心",
@@ -304,50 +286,9 @@ $(document).ready(function () {
     "Visit the Bird's Nest in Epilogue":                "尾声 进鸟窝",
     "Talk to Old Lady in Core":                         "8A 与老奶奶对话",
     "Clear Core":                                       "8A",
-  };
-  targetDom.append(trsBtn);
-
-  function initLang() {
-    $(".text-container").each(function () {
-      var enStr = $(this).html();
-      // console.log(enStr)
-      $(this).attr('data-lang-en', enStr)
-      if (rollTranslate[enStr]) {
-        $(this).attr('data-lang-cn', rollTranslate[enStr])
-      } else {
-        $(this).attr('data-lang-cn', enStr)
-      }
-    });
-    $('#transBtn').attr('data-inited', true)
-    doTrans($('#transBtn').attr('data-lang'))
-  }
-
-  function doTrans(lang) {
-    var targetLang = lang;
-    var arlang = targetLang == 'cn' ? 'en' : 'cn'
-    $('#transBtn').html(targetLang == 'cn' ? '显示英文' : '显示中文')
-    $(".text-container").each(function () {
-      $(this).html($(this).attr('data-lang-' + targetLang))
-    });
-    $('#transBtn').attr('data-lang', arlang)
-  }
-  function resetTrsBtn(){
-    $('#transBtn').attr('data-inited', 'false').attr('data-lang', 'cn').html('显示中文')
-  }
-
-  $('#transBtn').click(function () {
-    if ($(this).attr('data-inited') != 'true') {
-      initLang()
-    } else {
-      doTrans($(this).attr('data-lang'))
+};
+$(".text-container").each(function () {
+    if (rollTranslate[$(this).html()]) {
+        $(this).html(rollTranslate[$(this).html()])
     }
-  })
-
-  $(document).ajaxComplete(function (event, xhr, settings) {
-    if (settings.url.indexOf('room-settings') >= 0) {
-      console.log('card rebuild!')
-      resetTrsBtn()
-    }
-  });
-
-})
+});
