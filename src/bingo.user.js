@@ -1,10 +1,10 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.4
+// @version           0.0.5
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
 // @description       2019-09-24 一键翻译脚本
-// @author            zyowo, elderFish, Hyun.
+// @author            zyowo, elderFish, DemoJameson, Hyun.
 // @supportURL        https://github.com/kuailemario/Celeste_Trans/issues
 // @match             *://www.bingosync.com/room/*
 // @match             *://bingosync.com/room/*
@@ -326,17 +326,39 @@ $(document).ready(function () {
     doTrans($('#transBtn').attr('data-lang'))
   }
 
+  var targetLang;
+  var transing = false;
+
   function doTrans(lang) {
-    var targetLang = lang;
+    targetLang = lang;
     var arlang = targetLang == 'cn' ? 'en' : 'cn'
     $('#transBtn').html(targetLang == 'cn' ? '显示英文' : '显示中文')
     $(".text-container").each(function () {
       $(this).html($(this).attr('data-lang-' + targetLang))
     });
     $('#transBtn').attr('data-lang', arlang)
+
+    transChat();
   }
+
   function resetTrsBtn(){
     $('#transBtn').attr('data-inited', 'false').attr('data-lang', 'cn').html('显示中文')
+  }
+
+  function transChat() {
+    transing = true;
+    $(".goal-name").each(function () {
+      if(!$(this).attr('data-lang-en')){
+          $(this).attr('data-lang-en', $(this).text());
+      }
+
+      if(targetLang == 'cn'){
+          $(this).text(rollTranslate[$(this).text().replace(/>/g, "&gt;")]);
+      } else {
+          $(this).text($(this).attr('data-lang-en'));
+      }
+    });
+    transing = false;
   }
 
   $('#transBtn').click(function () {
@@ -353,5 +375,12 @@ $(document).ready(function () {
       resetTrsBtn()
     }
   });
+
+$('body').on('DOMNodeInserted', '.goal-entry', function(e) {
+    if(transing){
+        return;
+    }
+    transChat();
+});
 
 })
