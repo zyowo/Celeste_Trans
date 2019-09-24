@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.3
+// @version           0.0.4
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
 // @description       2019-09-24 一键翻译脚本
 // @author            zyowo, elderFish, Hyun.
@@ -18,6 +18,48 @@ $(document).ready(function () {
   var trsBtn = '<span id="transBtn" class="btn btn-default btn-xs pull-right collapse-button" data-lang="cn">显示中文</span>';
 
   var rollTranslate = {
+    // [新] 第9章 由其他比较麻烦的任务修改而来
+    "15 Berries in 4 Chapters":                         "第9章 撞1电箱",
+    "Complete 5 B-Sides":                               "第9章 3钥匙",
+    "All Collectibles in 3A":                           "第9章 抓10次鸟",
+    "All Collectibles in 5A":                           "第9章 踩5不同鱼",
+    "All Collectibles in 7A":                           "第9章 炸5不同鱼",
+    "All Collectibles in 8A":                           "第9章 消除8不同水母",
+    "Get a 1-Up in 3 Chapters":                         "第9章 月莓",
+    "Use 10 Binoculars":                                "第9章 3望远镜",
+    "Use 5 Binoculars in B-Sides":                      "第9章 假心",
+    "Use 6 Binoculars in B-Sides":                      "第9章 吃6不同恢复水晶",
+
+    // [新] 杂项 由其他比较麻烦的任务修改而来
+    "75 Berries":                                       "5A 破坏7不同墙",
+    "100 Berries":                                      "4A 破坏6不同墙",
+    "Grabless 5A":                                      "3金草莓",
+    "Grabless 6A":                                      "5金草莓",
+    "Visit the Bird's Nest in Epilogue":                "8A 踩5冰球",
+    "Talk to Old Lady in Core":                         "8B 踩10冰球",
+    "Use 7 Binoculars":                                 "5A 查看Theo手机",
+    "Use 8 Binoculars":                                 "6A 抱15次Badeline",
+    "Use 9 Binoculars":                                 "6B 抱10次Badeline",
+    "Use 3 Binoculars in 2 Chapters":                   "7B 通过0米+500米",
+    "Use 2 Binoculars in 3 Chapters":                   "7B 通过1000米+1500米",
+    "Use 2 Binoculars in 4 Chapters":                   "7B 通过2000米+2500米",
+
+    // 其他杂项
+    "Read the Poem in Awake":                           "2A-3/唤醒 读诗词",
+    "Take hidden path before Cliff Face":               "在 4A-4/悬崖峭壁 前走隐藏路线",
+    "Don't skip final 4A Cutscene":                     "4A 不跳过结尾剧情",
+    "No shortcut in 5A double bubble room":             "5A 用钥匙开第二扇门",
+    "Get 1 Key in Search":                              "5A-4/搜寻 1钥匙",
+    "Get 2 Keys in Search":                             "5A-4/搜寻 2钥匙",
+    "Get 3 Keys in Search":                             "5A-4/搜寻 3钥匙",
+    "Hit a Kevin block from all 4 sides":               "大脸/哇哇块 四方向各撞1次",
+    "Easteregg room in Reflection":                     "6A 进彩蛋房",
+    "Reflection Cutscene in Hollows":                   "6-3/洞穴 支线对话",
+    "Only top route in Hollows":                        "6-3/洞穴 全走上面",
+    "Only bottom route in Hollows":                     "6-3/洞穴 全走下面",
+    "All Flags in 3000M":                               "7A 3000米碰所有旗子",
+    "Clear Core":                                       "通关8A",
+
     // 分检查点草莓
     "All Berries in Start of 1A (6)":                   "1A-1/开始 6草莓",
     "All Berries in Crossing (9)":                      "1A-2/十字路口 9草莓",
@@ -67,14 +109,13 @@ $(document).ready(function () {
     "35 Berries in 7A":                                 "7A 35草莓",
 
     // 多章节草莓
-    "15 Berries in 2 Chapters":                         "两个章节 各15草莓",
-    "10 Berries in 3 Chapters":                         "三个章节 各10草莓",
-    "15 Berries in 3 Chapters":                         "三个章节 各15草莓",
-    "5 Berries in 4 Chapters":                          "四个章节 各5草莓",
-    "10 Berries in 4 Chapters":                         "四个章节 各10草莓",
-    "15 Berries in 4 Chapters":                         "第9章 撞1电箱",	// 已经修改
-    "5 Berries in 5 Chapters":                          "五个章节 各5草莓",
-    "10 Berries in 5 Chapters":                         "五个章节 各10草莓",
+    "5 Berries in 4 Chapters":                          "四个章节 各5草莓",   // 20
+    "5 Berries in 5 Chapters":                          "五个章节 各5草莓",   // 25
+    "15 Berries in 2 Chapters":                         "两个章节 各15草莓",  // 30
+    "10 Berries in 3 Chapters":                         "三个章节 各10草莓",  // 30
+    "10 Berries in 4 Chapters":                         "四个章节 各10草莓",  // 40
+    "15 Berries in 3 Chapters":                         "三个章节 各15草莓",  // 45
+    "10 Berries in 5 Chapters":                         "五个章节 各10草莓",  // 50
 
     // 累计草莓
     "20 Berries":                                       "20草莓",
@@ -85,8 +126,6 @@ $(document).ready(function () {
     "45 Berries":                                       "45草莓",
     "50 Berries":                                       "50草莓",
     "65 Berries":                                       "65草莓",
-    "75 Berries":                                       "5A 破坏7不同墙",      // 已经修改
-    "100 Berries":                                      "4A 破坏8不同墙",      // 已经修改
     //----------------------------------------------------------------
     "2 Winged Berries":                                 "2飞行草莓",
     "3 Winged Berries":                                 "3飞行草莓",
@@ -117,7 +156,7 @@ $(document).ready(function () {
     "Reflection Blue Heart":                            "6A 蓝心",
     "The Summit Blue Heart":                            "7A 蓝心",
     //----------------------------------------------------------------
-    "1 Blue and 1 Red Heart":                           "1枚蓝心+1枚红心",    // 防止与 1A 2A 混淆
+    "1 Blue and 1 Red Heart":                           "1枚蓝心+1枚红心",
     "2 Blue and 2 Red Hearts":                          "2枚蓝心+2枚红心",
     "3 Blue and 3 Red Hearts":                          "3枚蓝心+3枚红心",
     //----------------------------------------------------------------
@@ -138,7 +177,7 @@ $(document).ready(function () {
     "Reflection Cassette":                              "6A 磁带",
     "The Summit Cassette":                              "7A 磁带",
     //----------------------------------------------------------------
-    "2 Cassettes":                                      "2个磁带",      // 以下均略修 by云
+    "2 Cassettes":                                      "2个磁带",
     "3 Cassettes":                                      "3个磁带",
     "4 Cassettes":                                      "4个磁带",
     "5 Cassettes":                                      "5个磁带",
@@ -157,14 +196,10 @@ $(document).ready(function () {
     // 全收集
     "All Collectibles in 1A":                           "1A 全收集",
     "All Collectibles in 2A":                           "2A 全收集",
-    "All Collectibles in 3A":                           "3A 全收集",
     "All Collectibles in 4A":                           "4A 全收集",
-    "All Collectibles in 5A":                           "5A 全收集",
-    "All Collectibles in 7A":                           "7A 全收集",
-    "All Collectibles in 8A":                           "8A 全收集",
 
     // B面
-    "Forsaken City B-Side":                             "通关1B",      // 以下均略修 by云
+    "Forsaken City B-Side":                             "通关1B",
     "Old Site B-Side":                                  "通关2B",
     "Celestial Resort B-Side":                          "通关3B",
     "Golden Ridge B-Side":                              "通关4B",
@@ -177,39 +212,27 @@ $(document).ready(function () {
     "Complete 2 B-Sides":                               "2个B面",
     "Complete 3 B-Sides":                               "3个B面",
     "Complete 4 B-Sides":                               "4个B面",
-    "Complete 5 B-Sides":                               "5个B面",
     "Complete 2 A-Sides and 2 B-Sides":                 "2个A面+2个B面",
     "Complete 3 A-Sides and 3 B-Sides":                 "3个A面+3个B面",
     "Complete 5 A-Sides":                               "5个A面",
 
     // 望远镜
     "Use 2 Binoculars in 2 Chapters":                   "两个章节 各2望远镜",
-    "Use 3 Binoculars in 2 Chapters":                   "两个章节 各3望远镜",
     "Use 1 Binocular in 3 Chapters":                    "三个章节 各1望远镜",
-    "Use 2 Binoculars in 3 Chapters":                   "三个章节 各2望远镜",
     "Use 1 Binocular in 4 Chapters":                    "四个章节 各1望远镜",
-    "Use 2 Binoculars in 4 Chapters":                   "四个章节 各2望远镜",
     "Use 1 Binocular in 5 Chapters":                    "五个章节 各1望远镜",
     "Use all Binoculars in 4A (3)":                     "4A 3望远镜",
     //----------------------------------------------------------------
     "Use 5 Binoculars":                                 "5望远镜",
     "Use 6 Binoculars":                                 "6望远镜",
-    "Use 7 Binoculars":                                 "7望远镜",
-    "Use 8 Binoculars":                                 "8望远镜",
-    "Use 9 Binoculars":                                 "9望远镜",
-    "Use 10 Binoculars":                                "10望远镜",
     //----------------------------------------------------------------
     "Use 3 Binoculars in B-Sides":                      "B面 3望远镜",
     "Use 4 Binoculars in B-Sides":                      "B面 4望远镜",
-    "Use 5 Binoculars in B-Sides":                      "B面 5望远镜",
-    "Use 6 Binoculars in B-Sides":                      "B面 6望远镜",
 
     // 无抓
     "Grabless 1A":                                      "1A 无抓",
     "Grabless 2A":                                      "2A 无抓",
     "Grabless 3A":                                      "3A 无抓",
-    "Grabless 5A":                                      "3金草莓",    // 已经修改
-    "Grabless 6A":                                      "5金草莓",    // 已经修改
     "Complete 2 Chapters Grabless":                     "两个章节 无抓",
     //----------------------------------------------------------------
     "Grabless Huge Mess (3A Checkpoint)":               "3A-2/乱七八糟 无抓通过",
@@ -230,7 +253,6 @@ $(document).ready(function () {
     "Get a 1-Up in 4A":                                 "4A 1-Up",
     "Get a 1-Up in 5A":                                 "5A 1-Up",
     "Get a 1-Up in 2 Chapters":                         "两个章节 各1-Up",
-    "Get a 1-Up in 3 Chapters":                         "三个章节 各1-Up",
     "Get two 1-Ups":                                    "两个 1-Up",
     "Get three 1-Ups":                                  "三个 1-Up",
 
@@ -244,14 +266,14 @@ $(document).ready(function () {
     "5 Gems in the Summit":                             "第7章 5宝石",
 
     // Oshiro
-    "Stun Oshiro 10 times":                             "踩10次Oshiro",
-    "Stun Oshiro 15 times":                             "踩15次Oshiro",
-    "Stun Oshiro 25 times":                             "踩25次Oshiro",
+    "Stun Oshiro 10 times":                             "踩5次Oshiro",          // 已修改
+    "Stun Oshiro 15 times":                             "踩10次Oshiro",         // 已修改
+    "Stun Oshiro 25 times":                             "ABC面各踩1次Oshiro",   // 已修改
 
     // 雪球
     "Jump on 8 Snowballs":                              "踩8雪球",
     "Jump on 15 Snowballs":                             "踩15雪球",
-    "Jump on 20 Snowballs":                             "踩20雪球",
+    "Jump on 20 Snowballs":                             "踩20雪球",            //
 
     // 新浪
     "Kill a Seeker":                                    "杀1新浪",
@@ -260,7 +282,7 @@ $(document).ready(function () {
     "Stun Seekers 20 times":                            "踩至少3新浪共20次",    // 已修改 by云
     "Stun Seekers 30 times":                            "踩至少5新浪共30次",    // 已修改 by云
 
-    // Theo
+    // Theo 对话类只需要交互一下
     "Talk to Theo in Crossing":                         "1A-2/十字路口 与Theo对话",
     "Talk to Theo in Awake":                            "2A-3/唤醒 与Theo对话",
     "Talk to Theo in Elevator Shaft":                   "3A-3/电梯井 与Theo对话",
@@ -277,33 +299,15 @@ $(document).ready(function () {
     "Complete Awake without dashing":                   "2A-3/唤醒 无冲刺通过",
     
     // 第三章：天空度假山庄
-    "Huge Mess: Chest -&gt; Books -&gt; Towel":               "3A 柜子-书-毛巾",
-    "Huge Mess: Books -&gt; Chest -&gt; Towel":               "3A 书-柜子-毛巾",
-    "Huge Mess: Towel -&gt; Chest -&gt; Books":               "3A 毛巾-柜子-书",
-    "Huge Mess: Chest -&gt; Towel -&gt; Books":               "3A 柜子-毛巾-书",
-    "Huge Mess: Books -&gt; Towel -&gt; Chest":               "3A 书-毛巾-柜子",
-    "Huge Mess: Towel -&gt; Books -&gt; Chest":               "3A 毛巾-书-柜子",
+    "Huge Mess: Chest -&gt; Books -&gt; Towel":         "3A 柜子-书-毛巾",
+    "Huge Mess: Books -&gt; Chest -&gt; Towel":         "3A 书-柜子-毛巾",
+    "Huge Mess: Towel -&gt; Chest -&gt; Books":         "3A 毛巾-柜子-书",
+    "Huge Mess: Chest -&gt; Towel -&gt; Books":         "3A 柜子-毛巾-书",
+    "Huge Mess: Books -&gt; Towel -&gt; Chest":         "3A 书-毛巾-柜子",
+    "Huge Mess: Towel -&gt; Books -&gt; Chest":         "3A 毛巾-书-柜子",
     //----------------------------------------------------------------
-    "Find Letter and PICO-8 in Huge Mess":              "3A-2/乱七八糟 信封+PICO-8",
+    "Find Letter and PICO-8 in Huge Mess":              "3A-2/乱七八糟 打开PICO-8+信封",
     "Read Diary in Elevator Shaft":                     "3A-3/电梯井 读日记",
-
-    // 杂项
-    "Read the Poem in Awake":                           "2A-3/唤醒 读诗词",
-    "Take hidden path before Cliff Face":               "在 4A-4/悬崖峭壁 前走隐藏路线",
-    "Don't skip final 4A Cutscene":                     "4A 不跳过结尾剧情",    // 略修改 by云
-    "No shortcut in 5A double bubble room":             "5A 用钥匙开第二扇门",
-    "Get 1 Key in Search":                              "5A-4/搜寻 1钥匙",
-    "Get 2 Keys in Search":                             "5A-4/搜寻 2钥匙",
-    "Get 3 Keys in Search":                             "5A-4/搜寻 3钥匙",
-    "Hit a Kevin block from all 4 sides":               "大脸/哇哇块 四方向各撞1次",
-    "Easteregg room in Reflection":                     "6A 彩蛋房",
-    "Reflection Cutscene in Hollows":                   "6-3/洞穴 支线对话",
-    "Only top route in Hollows":                        "6-3/洞穴 全走上面",
-    "Only bottom route in Hollows":                     "6-3/洞穴 全走下面",
-    "All Flags in 3000M":                               "3000米碰所有旗子",
-    "Visit the Bird's Nest in Epilogue":                "尾声 进鸟窝",
-    "Talk to Old Lady in Core":                         "8A 与老奶奶对话",
-    "Clear Core":                                       "通关8A",
   };
   targetDom.append(trsBtn);
 
