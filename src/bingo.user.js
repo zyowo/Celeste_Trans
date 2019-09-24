@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.2
+// @version           0.0.3
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
 // @description       2019-09-24 一键翻译脚本
 // @author            zyowo, elderFish, Hyun.
@@ -277,12 +277,12 @@ $(document).ready(function () {
     "Complete Awake without dashing":                   "2A-3/唤醒 无冲刺通过",
     
     // 第三章：天空度假山庄
-    "Huge Mess: Chest -> Books -> Towel":               "3A 柜子-书-毛巾",
-    "Huge Mess: Books -> Chest -> Towel":               "3A 书-柜子-毛巾",
-    "Huge Mess: Towel -> Chest -> Books":               "3A 毛巾-柜子-书",
-    "Huge Mess: Chest -> Towel -> Books":               "3A 柜子-毛巾-书",
-    "Huge Mess: Books -> Towel -> Chest":               "3A 书-毛巾-柜子",
-    "Huge Mess: Towel -> Books -> Chest":               "3A 毛巾-书-柜子",
+    "Huge Mess: Chest -&gt; Books -&gt; Towel":               "3A 柜子-书-毛巾",
+    "Huge Mess: Books -&gt; Chest -&gt; Towel":               "3A 书-柜子-毛巾",
+    "Huge Mess: Towel -&gt; Chest -&gt; Books":               "3A 毛巾-柜子-书",
+    "Huge Mess: Chest -&gt; Towel -&gt; Books":               "3A 柜子-毛巾-书",
+    "Huge Mess: Books -&gt; Towel -&gt; Chest":               "3A 书-毛巾-柜子",
+    "Huge Mess: Towel -&gt; Books -&gt; Chest":               "3A 毛巾-书-柜子",
     //----------------------------------------------------------------
     "Find Letter and PICO-8 in Huge Mess":              "3A-2/乱七八糟 信封+PICO-8",
     "Read Diary in Elevator Shaft":                     "3A-3/电梯井 读日记",
@@ -303,7 +303,7 @@ $(document).ready(function () {
     "All Flags in 3000M":                               "3000米碰所有旗子",
     "Visit the Bird's Nest in Epilogue":                "尾声 进鸟窝",
     "Talk to Old Lady in Core":                         "8A 与老奶奶对话",
-    "Clear Core":                                       "8A",
+    "Clear Core":                                       "通关8A",
   };
   targetDom.append(trsBtn);
 

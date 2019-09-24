@@ -1,5 +1,6 @@
-﻿var rollTranslate = {
+﻿// @version           0.0.3
 
+var rollTranslate = {
     // 分检查点草莓
     "All Berries in Start of 1A (6)":                   "1A-1/开始 6草莓",
     "All Berries in Crossing (9)":                      "1A-2/十字路口 9草莓",
@@ -99,9 +100,9 @@
     "Reflection Blue Heart":                            "6A 蓝心",
     "The Summit Blue Heart":                            "7A 蓝心",
     //----------------------------------------------------------------
-    "1 Blue and 1 Red Heart":                           "1蓝心+1红心",
-    "2 Blue and 2 Red Hearts":                          "2蓝心+2红心",
-    "3 Blue and 3 Red Hearts":                          "3蓝心+3红心",
+    "1 Blue and 1 Red Heart":                           "1枚蓝心+1枚红心",    // 防止与 1A 2A 混淆
+    "2 Blue and 2 Red Hearts":                          "2枚蓝心+2枚红心",
+    "3 Blue and 3 Red Hearts":                          "3枚蓝心+3枚红心",
     //----------------------------------------------------------------
     "Blue and Red Heart in Forsaken City":              "第1章 蓝心+红心",
     "Blue and Red Heart in Old Site":                   "第2章 蓝心+红心",
@@ -259,12 +260,12 @@
     "Complete Awake without dashing":                   "2A-3/唤醒 无冲刺通过",
     
     // 第三章：天空度假山庄
-    "Huge Mess: Chest -> Books -> Towel":               "3A 柜子-书-毛巾",
-    "Huge Mess: Books -> Chest -> Towel":               "3A 书-柜子-毛巾",
-    "Huge Mess: Towel -> Chest -> Books":               "3A 毛巾-柜子-书",
-    "Huge Mess: Chest -> Towel -> Books":               "3A 柜子-毛巾-书",
-    "Huge Mess: Books -> Towel -> Chest":               "3A 书-毛巾-柜子",
-    "Huge Mess: Towel -> Books -> Chest":               "3A 毛巾-书-柜子",
+    "Huge Mess: Chest -&gt; Books -&gt; Towel":               "3A 柜子-书-毛巾",
+    "Huge Mess: Books -&gt; Chest -&gt; Towel":               "3A 书-柜子-毛巾",
+    "Huge Mess: Towel -&gt; Chest -&gt; Books":               "3A 毛巾-柜子-书",
+    "Huge Mess: Chest -&gt; Towel -&gt; Books":               "3A 柜子-毛巾-书",
+    "Huge Mess: Books -&gt; Towel -&gt; Chest":               "3A 书-毛巾-柜子",
+    "Huge Mess: Towel -&gt; Books -&gt; Chest":               "3A 毛巾-书-柜子",
     //----------------------------------------------------------------
     "Find Letter and PICO-8 in Huge Mess":              "3A-2/乱七八糟 信封+PICO-8",
     "Read Diary in Elevator Shaft":                     "3A-3/电梯井 读日记",
@@ -285,7 +286,7 @@
     "All Flags in 3000M":                               "3000米碰所有旗子",
     "Visit the Bird's Nest in Epilogue":                "尾声 进鸟窝",
     "Talk to Old Lady in Core":                         "8A 与老奶奶对话",
-    "Clear Core":                                       "8A",
+    "Clear Core":                                       "通关8A",
 };
 $(".text-container").each(function () {
     if (rollTranslate[$(this).html()]) {
