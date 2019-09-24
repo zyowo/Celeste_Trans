@@ -1,24 +1,25 @@
-﻿// @version           0.0.4
+﻿// @version           0.0.6
 
 var rollTranslate = {
     // [新] 第9章 由其他比较麻烦的任务修改而来
-    "15 Berries in 4 Chapters":                         "第9章 撞1电箱",
-    "Complete 5 B-Sides":                               "第9章 3钥匙",
-    "All Collectibles in 3A":                           "第9章 抓10次鸟",
-    "All Collectibles in 5A":                           "第9章 踩5不同鱼",
-    "All Collectibles in 7A":                           "第9章 炸5不同鱼",
-    "All Collectibles in 8A":                           "第9章 消除8不同水母",
-    "Get a 1-Up in 3 Chapters":                         "第9章 月莓",
-    "Use 10 Binoculars":                                "第9章 3望远镜",
-    "Use 5 Binoculars in B-Sides":                      "第9章 假心",
-    "Use 6 Binoculars in B-Sides":                      "第9章 吃6不同恢复水晶",
+    "15 Berries in 4 Chapters":                          "第9章 踩8不同鱼",          // 9-2 一个人
+    "Complete 5 B-Sides":                                "第9章 炸8不同鱼",          // 9-2 一个人
+    "Use 10 Binoculars":                                 "第9章 消除8不同水母",      // 9-3 能源
+    "All Collectibles in 3A":                            "9-3/能源 清除五门电箱",    // 9-3 能源
+    "All Collectibles in 5A":                            "第9章 假心",               // 9-4 铭记
+    "All Collectibles in 7A":                            "9-6/决心 踩5冰球",         // 9-6 决心（吹风面）
+    "All Collectibles in 8A":                            "通过 9-7/倔强 所有节奏面", // 9-7 倔强（节奏面）
+    "Get a 1-Up in 3 Chapters":                          "第9章 抓15不同位置鸟",     // 9-8 和谐（抓鸟面）
+    "Use 5 Binoculars in B-Sides":                       "第9章 月莓",               // 9-9 再见
+    "Use 6 Binoculars in B-Sides":                       "第9章 3望远镜",
 
+ 
     // [新] 杂项 由其他比较麻烦的任务修改而来
     "75 Berries":                                       "5A 破坏7不同墙",
     "100 Berries":                                      "4A 破坏6不同墙",
     "Grabless 5A":                                      "3金草莓",
     "Grabless 6A":                                      "5金草莓",
-    "Visit the Bird's Nest in Epilogue":                "8A 踩5冰球",
+    "Visit the Bird's Nest in Epilogue":                "8A 踩10冰球",
     "Talk to Old Lady in Core":                         "8B 踩10冰球",
     "Use 7 Binoculars":                                 "5A 查看Theo手机",
     "Use 8 Binoculars":                                 "6A 抱15次Badeline",
@@ -272,8 +273,8 @@ var rollTranslate = {
     "Talk to Theo in Search":                           "5A-4/搜寻 与Theo对话",
     //----------------------------------------------------------------
     "2 optional Theo Cutscenes":                        "2个可不触发的Theo对话",
-    "3 optional Theo Cutscenes":                        "3支线Theo对话",
-    "All 4 optional Theo Cutscenes":                    "4支线Theo对话",
+    "3 optional Theo Cutscenes":                        "3个可不触发的Theo对话",
+    "All 4 optional Theo Cutscenes":                    "4个可不触发的Theo对话",
 
     // 无冲刺
     "Winged Golden Berry":                              "1A隐藏金",
