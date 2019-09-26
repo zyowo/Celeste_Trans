@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.6
+// @version           0.0.7
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
-// @description       2019-09-24 一键翻译脚本
+// @description       2019-09-26 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
 // @supportURL        https://github.com/kuailemario/Celeste_Trans/issues
 // @match             *://www.bingosync.com/room/*
@@ -25,7 +25,7 @@ $(document).ready(function () {
     "All Collectibles in 3A":                            "9-3/能源 清除五门电箱",    // 9-3 能源
     "All Collectibles in 5A":                            "第9章 假心",               // 9-4 铭记
     "All Collectibles in 7A":                            "9-6/决心 踩5冰球",         // 9-6 决心（吹风面）
-    "All Collectibles in 8A":                            "通过 9-7/倔强 所有节奏面", // 9-7 倔强（节奏面）
+    "All Collectibles in 8A":                            "第9章 通过所有节奏面",     // 9-7 倔强（节奏面）
     "Get a 1-Up in 3 Chapters":                          "第9章 抓15不同位置鸟",     // 9-8 和谐（抓鸟面）
     "Use 5 Binoculars in B-Sides":                       "第9章 月莓",               // 9-9 再见
     "Use 6 Binoculars in B-Sides":                       "第9章 3望远镜",
