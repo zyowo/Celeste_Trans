@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.8
+// @version           0.0.9
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
 // @description       2019-09-28 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
@@ -274,7 +274,7 @@ $(document).ready(function () {
     // 雪球
     "Jump on 8 Snowballs":                              "踩8雪球",
     "Jump on 15 Snowballs":                             "踩15雪球",
-    "Jump on 20 Snowballs":                             "踩8不同房间雪球",      // 已修改
+    "Jump on 20 Snowballs":                             "踩5不同房间雪球",      // 已修改
 
     // 新浪
     "Kill a Seeker":                                    "杀1新浪",

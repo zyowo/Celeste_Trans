@@ -1,4 +1,4 @@
-﻿// @version           0.0.8
+﻿// @version           0.0.9
 
 var rollTranslate = {
     // [新] 第9章 由其他比较麻烦的任务修改而来
@@ -257,7 +257,7 @@ var rollTranslate = {
     // 雪球
     "Jump on 8 Snowballs":                              "踩8雪球",
     "Jump on 15 Snowballs":                             "踩15雪球",
-    "Jump on 20 Snowballs":                             "踩8不同房间雪球",      // 已修改
+    "Jump on 20 Snowballs":                             "踩5不同房间雪球",      // 已修改
 
     // 新浪
     "Kill a Seeker":                                    "杀1新浪",
