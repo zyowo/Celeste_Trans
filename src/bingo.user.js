@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.7
+// @version           0.0.8
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
-// @description       2019-09-26 一键翻译脚本
+// @description       2019-09-28 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
 // @supportURL        https://github.com/kuailemario/Celeste_Trans/issues
 // @match             *://www.bingosync.com/room/*
@@ -38,7 +38,6 @@ $(document).ready(function () {
     "Grabless 6A":                                      "5金草莓",
     "Visit the Bird's Nest in Epilogue":                "8A 踩10冰球",
     "Talk to Old Lady in Core":                         "8B 踩10冰球",
-    "Use 7 Binoculars":                                 "5A 查看Theo手机",
     "Use 8 Binoculars":                                 "6A 抱15次Badeline",
     "Use 9 Binoculars":                                 "6B 抱10次Badeline",
     "Use 3 Binoculars in 2 Chapters":                   "7B 通过0米+500米",
@@ -226,6 +225,7 @@ $(document).ready(function () {
     //----------------------------------------------------------------
     "Use 5 Binoculars":                                 "5望远镜",
     "Use 6 Binoculars":                                 "6望远镜",
+    "Use 7 Binoculars":                                 "7望远镜",
     //----------------------------------------------------------------
     "Use 3 Binoculars in B-Sides":                      "B面 3望远镜",
     "Use 4 Binoculars in B-Sides":                      "B面 4望远镜",
@@ -268,13 +268,13 @@ $(document).ready(function () {
 
     // Oshiro
     "Stun Oshiro 10 times":                             "踩5次Oshiro",          // 已修改
-    "Stun Oshiro 15 times":                             "踩10次Oshiro",         // 已修改
-    "Stun Oshiro 25 times":                             "ABC面各踩1次Oshiro",   // 已修改
+    "Stun Oshiro 15 times":                             "踩5不同房间Oshiro",    // 已修改
+    "Stun Oshiro 25 times":                             "踩8不同房间Oshiro",   // 已修改
 
     // 雪球
     "Jump on 8 Snowballs":                              "踩8雪球",
     "Jump on 15 Snowballs":                             "踩15雪球",
-    "Jump on 20 Snowballs":                             "踩20雪球",            //
+    "Jump on 20 Snowballs":                             "踩8不同房间雪球",      // 已修改
 
     // 新浪
     "Kill a Seeker":                                    "杀1新浪",

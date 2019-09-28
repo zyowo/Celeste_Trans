@@ -1,4 +1,4 @@
-﻿// @version           0.0.7
+﻿// @version           0.0.8
 
 var rollTranslate = {
     // [新] 第9章 由其他比较麻烦的任务修改而来
@@ -21,7 +21,6 @@ var rollTranslate = {
     "Grabless 6A":                                      "5金草莓",
     "Visit the Bird's Nest in Epilogue":                "8A 踩10冰球",
     "Talk to Old Lady in Core":                         "8B 踩10冰球",
-    "Use 7 Binoculars":                                 "5A 查看Theo手机",
     "Use 8 Binoculars":                                 "6A 抱15次Badeline",
     "Use 9 Binoculars":                                 "6B 抱10次Badeline",
     "Use 3 Binoculars in 2 Chapters":                   "7B 通过0米+500米",
@@ -209,6 +208,7 @@ var rollTranslate = {
     //----------------------------------------------------------------
     "Use 5 Binoculars":                                 "5望远镜",
     "Use 6 Binoculars":                                 "6望远镜",
+    "Use 7 Binoculars":                                 "7望远镜",
     //----------------------------------------------------------------
     "Use 3 Binoculars in B-Sides":                      "B面 3望远镜",
     "Use 4 Binoculars in B-Sides":                      "B面 4望远镜",
@@ -251,13 +251,13 @@ var rollTranslate = {
 
     // Oshiro
     "Stun Oshiro 10 times":                             "踩5次Oshiro",          // 已修改
-    "Stun Oshiro 15 times":                             "踩10次Oshiro",         // 已修改
-    "Stun Oshiro 25 times":                             "ABC面各踩1次Oshiro",   // 已修改
+    "Stun Oshiro 15 times":                             "踩5不同房间Oshiro",    // 已修改
+    "Stun Oshiro 25 times":                             "踩8不同房间Oshiro",   // 已修改
 
     // 雪球
     "Jump on 8 Snowballs":                              "踩8雪球",
     "Jump on 15 Snowballs":                             "踩15雪球",
-    "Jump on 20 Snowballs":                             "踩20雪球",            //
+    "Jump on 20 Snowballs":                             "踩8不同房间雪球",      // 已修改
 
     // 新浪
     "Kill a Seeker":                                    "杀1新浪",
