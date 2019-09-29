@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.0.9
+// @version           0.1.0
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
-// @description       2019-09-28 一键翻译脚本
+// @description       2019-09-29 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
 // @supportURL        https://github.com/kuailemario/Celeste_Trans/issues
 // @match             *://www.bingosync.com/room/*
@@ -177,10 +177,10 @@ $(document).ready(function () {
     "Reflection Cassette":                              "6A 磁带",
     "The Summit Cassette":                              "7A 磁带",
     //----------------------------------------------------------------
-    "2 Cassettes":                                      "2个磁带",
-    "3 Cassettes":                                      "3个磁带",
-    "4 Cassettes":                                      "4个磁带",
-    "5 Cassettes":                                      "5个磁带",
+    "2 Cassettes":                                      "2张磁带",
+    "3 Cassettes":                                      "3张磁带",
+    "4 Cassettes":                                      "4张磁带",
+    "5 Cassettes":                                      "5张磁带",
     
     // 水晶之心
     "2 Hearts":                                         "2水晶之心",
@@ -267,7 +267,7 @@ $(document).ready(function () {
     "5 Gems in the Summit":                             "第7章 5宝石",
 
     // Oshiro
-    "Stun Oshiro 10 times":                             "踩5次Oshiro",          // 已修改
+    "Stun Oshiro 10 times":                             "踩10次Oshiro",
     "Stun Oshiro 15 times":                             "踩5不同房间Oshiro",    // 已修改
     "Stun Oshiro 25 times":                             "踩8不同房间Oshiro",   // 已修改
 

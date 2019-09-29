@@ -1,4 +1,4 @@
-﻿// @version           0.0.9
+﻿// @version           0.1.0
 
 var rollTranslate = {
     // [新] 第9章 由其他比较麻烦的任务修改而来
@@ -160,10 +160,10 @@ var rollTranslate = {
     "Reflection Cassette":                              "6A 磁带",
     "The Summit Cassette":                              "7A 磁带",
     //----------------------------------------------------------------
-    "2 Cassettes":                                      "2个磁带",
-    "3 Cassettes":                                      "3个磁带",
-    "4 Cassettes":                                      "4个磁带",
-    "5 Cassettes":                                      "5个磁带",
+    "2 Cassettes":                                      "2张磁带",
+    "3 Cassettes":                                      "3张磁带",
+    "4 Cassettes":                                      "4张磁带",
+    "5 Cassettes":                                      "5张磁带",
     
     // 水晶之心
     "2 Hearts":                                         "2水晶之心",
@@ -250,7 +250,7 @@ var rollTranslate = {
     "5 Gems in the Summit":                             "第7章 5宝石",
 
     // Oshiro
-    "Stun Oshiro 10 times":                             "踩5次Oshiro",          // 已修改
+    "Stun Oshiro 10 times":                             "踩10次Oshiro",
     "Stun Oshiro 15 times":                             "踩5不同房间Oshiro",    // 已修改
     "Stun Oshiro 25 times":                             "踩8不同房间Oshiro",   // 已修改
 
