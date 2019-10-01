@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.1.0
+// @version           0.1.1
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
 // @description       2019-09-29 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
@@ -38,15 +38,15 @@ $(document).ready(function () {
     "Grabless 6A":                                      "5金草莓",
     "Visit the Bird's Nest in Epilogue":                "8A 踩10冰球",
     "Talk to Old Lady in Core":                         "8B 踩10冰球",
-    "Use 8 Binoculars":                                 "6A 抱15次Badeline",
-    "Use 9 Binoculars":                                 "6B 抱10次Badeline",
+    "Use 8 Binoculars":                                 "6A 撞15不同位置Badeline",
+    "Use 9 Binoculars":                                 "6B 撞10不同位置Badeline",
     "Use 3 Binoculars in 2 Chapters":                   "7B 通过0米+500米",
     "Use 2 Binoculars in 3 Chapters":                   "7B 通过1000米+1500米",
     "Use 2 Binoculars in 4 Chapters":                   "7B 通过2000米+2500米",
 
     // 其他杂项
     "Read the Poem in Awake":                           "2A-3/唤醒 读诗词",
-    "Take hidden path before Cliff Face":               "在 4A-4/悬崖峭壁 前走隐藏路线",
+    "Take hidden path before Cliff Face":               "在 4A-3/古道 最后一面走隐藏路线",
     "Don't skip final 4A Cutscene":                     "4A 不跳过结尾剧情",
     "No shortcut in 5A double bubble room":             "5A 用钥匙开第二扇门",
     "Get 1 Key in Search":                              "5A-4/搜寻 1钥匙",
@@ -194,9 +194,9 @@ $(document).ready(function () {
     "4 Hearts and 4 Cassettes":                         "4水晶之心+4磁带",
 
     // 全收集
-    "All Collectibles in 1A":                           "1A 全收集",
-    "All Collectibles in 2A":                           "2A 全收集",
-    "All Collectibles in 4A":                           "4A 全收集",
+    "All Collectibles in 1A":                           "1A 全部收集品",
+    "All Collectibles in 2A":                           "2A 全部收集品",
+    "All Collectibles in 4A":                           "4A 全部收集品",
 
     // B面
     "Forsaken City B-Side":                             "通关1B",
