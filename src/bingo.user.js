@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.1.1
+// @version           0.1.2
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
-// @description       2019-09-29 一键翻译脚本
+// @description       2019-10-09 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
 // @supportURL        https://github.com/kuailemario/Celeste_Trans/issues
 // @match             *://www.bingosync.com/room/*
@@ -18,22 +18,22 @@ $(document).ready(function () {
   var trsBtn = '<span id="transBtn" class="btn btn-default btn-xs pull-right collapse-button" data-lang="cn">显示中文</span>';
 
   var rollTranslate = {
-    // [新] 第9章 由其他比较麻烦的任务修改而来
+    // [新] 第9章 由其他任务修改而来
     "15 Berries in 4 Chapters":                          "第9章 踩8不同鱼",          // 9-2 一个人
     "Complete 5 B-Sides":                                "第9章 炸8不同鱼",          // 9-2 一个人
     "Use 10 Binoculars":                                 "第9章 消除8不同水母",      // 9-3 能源
     "All Collectibles in 3A":                            "9-3/能源 清除五门电箱",    // 9-3 能源
-    "All Collectibles in 5A":                            "第9章 假心",               // 9-4 铭记
+    "All Collectibles in 5A":                            "第9章 通过所有节奏面",      // 9-7 倔强
     "All Collectibles in 7A":                            "9-6/决心 踩5冰球",         // 9-6 决心（吹风面）
-    "All Collectibles in 8A":                            "第9章 通过所有节奏面",     // 9-7 倔强（节奏面）
     "Get a 1-Up in 3 Chapters":                          "第9章 抓15不同位置鸟",     // 9-8 和谐（抓鸟面）
     "Use 5 Binoculars in B-Sides":                       "第9章 月莓",               // 9-9 再见
     "Use 6 Binoculars in B-Sides":                       "第9章 3望远镜",
 
  
-    // [新] 杂项 由其他比较麻烦的任务修改而来
+    // [新] 杂项 由其他任务修改而来
     "75 Berries":                                       "5A 破坏7不同墙",
     "100 Berries":                                      "4A 破坏6不同墙",
+    "Hit a Kevin block from all 4 sides":               "红泡泡内破坏5不同墙",
     "Grabless 5A":                                      "3金草莓",
     "Grabless 6A":                                      "5金草莓",
     "Visit the Bird's Nest in Epilogue":                "8A 踩10冰球",
@@ -52,7 +52,6 @@ $(document).ready(function () {
     "Get 1 Key in Search":                              "5A-4/搜寻 1钥匙",
     "Get 2 Keys in Search":                             "5A-4/搜寻 2钥匙",
     "Get 3 Keys in Search":                             "5A-4/搜寻 3钥匙",
-    "Hit a Kevin block from all 4 sides":               "大脸/哇哇块 四方向各撞1次",
     "Easteregg room in Reflection":                     "6A 进彩蛋房",
     "Reflection Cutscene in Hollows":                   "6-3/洞穴 支线对话",
     "Only top route in Hollows":                        "6-3/洞穴 全走上面",
@@ -197,6 +196,7 @@ $(document).ready(function () {
     "All Collectibles in 1A":                           "1A 全部收集品",
     "All Collectibles in 2A":                           "2A 全部收集品",
     "All Collectibles in 4A":                           "4A 全部收集品",
+    "All Collectibles in 8A":                           "8A 全部收集品",
 
     // B面
     "Forsaken City B-Side":                             "通关1B",
@@ -208,13 +208,15 @@ $(document).ready(function () {
     "The Summit B-Side":                                "通关7B",
 
     // 累计AB面
-    "Complete 1 B-Side":                                "1个B面",
     "Complete 2 B-Sides":                               "2个B面",
     "Complete 3 B-Sides":                               "3个B面",
     "Complete 4 B-Sides":                               "4个B面",
     "Complete 2 A-Sides and 2 B-Sides":                 "2个A面+2个B面",
     "Complete 3 A-Sides and 3 B-Sides":                 "3个A面+3个B面",
     "Complete 5 A-Sides":                               "5个A面",
+
+    "Find Letter and PICO-8 in Huge Mess":              "3个C面",       // 已修改
+    "Complete 1 B-Side":                                "5个C面",       // 已修改
 
     // 望远镜
     "Use 2 Binoculars in 2 Chapters":                   "两个章节 各2望远镜",
@@ -307,7 +309,6 @@ $(document).ready(function () {
     "Huge Mess: Books -&gt; Towel -&gt; Chest":         "3A 书-毛巾-柜子",
     "Huge Mess: Towel -&gt; Books -&gt; Chest":         "3A 毛巾-书-柜子",
     //----------------------------------------------------------------
-    "Find Letter and PICO-8 in Huge Mess":              "3A-2/乱七八糟 打开PICO-8+信封",
     "Read Diary in Elevator Shaft":                     "3A-3/电梯井 读日记",
   };
   targetDom.append(trsBtn);
