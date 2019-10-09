@@ -6,6 +6,7 @@ var rollTranslate = {
     "Complete 5 B-Sides":                                "第9章 炸8不同鱼",          // 9-2 一个人
     "Use 10 Binoculars":                                 "第9章 消除8不同水母",      // 9-3 能源
     "All Collectibles in 3A":                            "9-3/能源 清除五门电箱",    // 9-3 能源
+    "All Berries in Awake (1)":                          "第9章 假心",              // 9-5 视界线
     "All Collectibles in 5A":                            "第9章 通过所有节奏面",      // 9-7 倔强
     "All Collectibles in 7A":                            "9-6/决心 踩5冰球",         // 9-6 决心（吹风面）
     "Get a 1-Up in 3 Chapters":                          "第9章 抓15不同位置鸟",     // 9-8 和谐（抓鸟面）
@@ -14,6 +15,8 @@ var rollTranslate = {
 
  
     // [新] 杂项 由其他任务修改而来
+    "Talk to Theo in Crossing":                         "2A 1冲刺到镜子对话",
+    "Talk to Theo in Awake":                            "8B 抱Badeline",
     "75 Berries":                                       "5A 破坏7不同墙",
     "100 Berries":                                      "4A 破坏6不同墙",
     "Hit a Kevin block from all 4 sides":               "红泡泡内破坏5不同墙",
@@ -40,7 +43,6 @@ var rollTranslate = {
     "Only top route in Hollows":                        "6-3/洞穴 全走上面",
     "Only bottom route in Hollows":                     "6-3/洞穴 全走下面",
     "All Flags in 3000M":                               "7A 3000米碰所有旗子",
-    "Clear Core":                                       "通关8A",
 
     // 分检查点草莓
     "All Berries in Start of 1A (6)":                   "1A-1/开始 6草莓",
@@ -49,7 +51,6 @@ var rollTranslate = {
     //----------------------------------------------------------------
     "All Berries in Start of 2A (9)":                   "2A-1/开始 9草莓",
     "All Berries in Intervention (8)":                  "2A-2/干涉 8草莓",
-    "All Berries in Awake (1)":                         "2A-3/唤醒 1草莓",
     //----------------------------------------------------------------
     "All Berries in Start of 3A (11)":                  "3A-1/开始 11草莓",
     "All Berries in Huge Mess (7)":                     "3A-2/乱七八糟 7草莓",
@@ -181,7 +182,7 @@ var rollTranslate = {
     "All Collectibles in 4A":                           "4A 全部收集品",
     "All Collectibles in 8A":                           "8A 全部收集品",
 
-    // B面
+    // 通关
     "Forsaken City B-Side":                             "通关1B",
     "Old Site B-Side":                                  "通关2B",
     "Celestial Resort B-Side":                          "通关3B",
@@ -189,17 +190,19 @@ var rollTranslate = {
     "Mirror Temple B-Side":                             "通关5B",
     "Reflection B-Side":                                "通关6B",
     "The Summit B-Side":                                "通关7B",
+    "Clear Core":                                       "通关8A",
+    "Talk to Theo in Elevator Shaft":                   "通关8C",   // 已经修改
+    "Talk to Theo in Search":                           "通关7C",   // 已经修改
 
-    // 累计AB面
+    // 累计通关
     "Complete 2 B-Sides":                               "2个B面",
     "Complete 3 B-Sides":                               "3个B面",
     "Complete 4 B-Sides":                               "4个B面",
     "Complete 2 A-Sides and 2 B-Sides":                 "2个A面+2个B面",
     "Complete 3 A-Sides and 3 B-Sides":                 "3个A面+3个B面",
     "Complete 5 A-Sides":                               "5个A面",
-
-    "Find Letter and PICO-8 in Huge Mess":              "3个C面",       // 已修改
-    "Complete 1 B-Side":                                "5个C面",       // 已修改
+    "Find Letter and PICO-8 in Huge Mess":              "3个C面",       // 已经修改
+    "Complete 1 B-Side":                                "5个C面",       // 已经修改
 
     // 望远镜
     "Use 2 Binoculars in 2 Chapters":                   "两个章节 各2望远镜",
@@ -269,11 +272,6 @@ var rollTranslate = {
     "Stun Seekers 30 times":                            "踩至少5新浪共30次",    // 已修改 by云
 
     // Theo 对话类只需要交互一下
-    "Talk to Theo in Crossing":                         "1A-2/十字路口 与Theo对话",
-    "Talk to Theo in Awake":                            "2A-3/唤醒 与Theo对话",
-    "Talk to Theo in Elevator Shaft":                   "3A-3/电梯井 与Theo对话",
-    "Talk to Theo in Search":                           "5A-4/搜寻 与Theo对话",
-    //----------------------------------------------------------------
     "2 optional Theo Cutscenes":                        "2个可不触发的Theo对话",
     "3 optional Theo Cutscenes":                        "3个可不触发的Theo对话",
     "All 4 optional Theo Cutscenes":                    "4个可不触发的Theo对话",
