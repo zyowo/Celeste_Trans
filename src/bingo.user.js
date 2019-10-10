@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              蔚蓝BINGO翻译
 // @namespace         https://github.com/kuailemario/Celeste_Trans.git
-// @version           0.1.3
+// @version           0.1.4
 // @icon              http://www.mattmakesgames.com/images/games/Celeste1.png
 // @description       2019-10-10 一键翻译脚本
 // @author            zyowo, elderFish, DemoJameson, Hyun.
@@ -22,7 +22,7 @@ $(document).ready(function () {
     "15 Berries in 4 Chapters":                          "第9章 踩8不同鱼",          // 9-2 一个人
     "Complete 5 B-Sides":                                "第9章 炸8不同鱼",          // 9-2 一个人
     "Use 10 Binoculars":                                 "第9章 消除8不同水母",      // 9-3 能源
-    "All Collectibles in 3A":                            "9-3/能源 清除五门电箱",    // 9-3 能源
+    "All Collectibles in 3A":                            "9-3/能源 清除五门",        // 9-3 能源
     "All Berries in Awake (1)":                          "第9章 假心",              // 9-5 视界线
     "All Collectibles in 5A":                            "第9章 通过所有节奏面",      // 9-7 倔强
     "All Collectibles in 7A":                            "9-6/决心 踩5冰球",         // 9-6 决心（吹风面）
